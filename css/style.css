@@ -1,81 +1,65 @@
 body
 {
-    margin: 1% 10%;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(175,30,154,0.4766281512605042) 38%, rgba(0,212,255,1) 100%);
+    margin: 1vw 10vw;
+    min-height: 100vh;
 } 
 @media (max-width: 1024px) 
 {
     body
     {
         margin: 1% 5%;
+        
     }
 }
-.header-con
+h1
 {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 60px;
+    color: #ffc300;
+    text-decoration: underline #ffc300;
 }
-.header-con div
+
+
+h2
 {
-width: 45%;
-padding: 10px 20px;
-border: 1px solid gray;
+
+    font-size: 36px;
+    line-height: 20px;
+}
+
+p
+{
+    color: whitesmoke;
+    font-size: 26px;
+    line-height:35px;
+
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ffc300;
+    height: 98vh;
+
+
+}
+.header-con h1
+{
+    font-size: 120px;
+
+    
+}
+
+table th
+{
+
+    width: 33vw;
+    border:  2px solid purple;
+    padding: 10px;
+    color: lightblue;
 }
 
 
 
-
-
-/* The animation starts here */
-.animated-box{
-    position: relative;
-  }
-  
-  .animated-box:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 4px;
-    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
-    background-size: 300% 300%;
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  
-  .animated-box.in:after {
-    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
-  }
-  
-  /* motion */
-  @keyframes gradient-animation {
-    0% {
-      background-position: 15% 0%;
-    }
-    50% {
-      background-position: 85% 100%;
-    }
-    100% {
-      background-position: 15% 0%;
-    }
-  }
-  
-  @keyframes frame-enter {
-    0% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
-    }
-    25% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
-    }
-    50% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
-    }
-    75% {
-      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
-    }
-    100% {
-      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
-    }
-  }
-  
