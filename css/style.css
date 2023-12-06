@@ -9,8 +9,8 @@
 /*----------------*/
 
 body {
-    background: rgb(225,12,63);
-    background: linear-gradient(0deg, rgba(225,12,63,1) 0%, rgba(254,240,242,1) 100%);
+    background: rgb(12,225,212);
+    background: linear-gradient(180deg, rgba(12,225,212,0.9836309523809523) 0%, rgba(240,253,254,0.6054796918767507) 85%);
     margin: 1vw 10vw;
     min-height: 100vh;
 
@@ -58,7 +58,7 @@ header {
 
 }
 header .bc{
-    background-image: url(../img/bg-gif.webp);
+    background-image: url(../img/schnee-animiert.gif);
     background-size: contain;
     width: 100%;
     border: 20px solid rgba(254,240,242,1);
@@ -82,7 +82,7 @@ main
     justify-content: center;
 }
 main .letter{
-    background-image: url(../img/letter-big.png);
+
     padding-top: 20px;
     width: 950px;
     height: 1200px;
